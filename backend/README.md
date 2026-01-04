@@ -230,11 +230,9 @@ The API returns appropriate HTTP status codes:
 
 ### MongoDB Atlas Setup
 
-1. Create a free cluster at [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
-2. Create a database user
-3. Whitelist IP addresses (0.0.0.0/0 for all IPs)
-4. Get your connection string
-5. Replace `<password>` with your database user password
+
+1. Get your connection string
+
 
 ## 🔒 Security Best Practices
 
