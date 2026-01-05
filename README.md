@@ -1,12 +1,12 @@
 # Recipes App - Full-Stack Application
 
-A complete, production-ready recipe management application with a REST API backend and modern animated frontend.
+A complete, production-ready recipe management application with a REST API backend and modern React frontend.
 
 ## 🌟 Overview
 
 This project consists of two main parts:
 - **Backend**: RESTful API built with Node.js, Express, and MongoDB
-- **Frontend**: Modern React application with Tailwind CSS and Framer Motion animations
+- **Frontend**: Modern React application with Tailwind CSS and shadcn-ui
 
 ## 📸 Features
 
@@ -21,7 +21,6 @@ This project consists of two main parts:
 
 ### Frontend Features
 - ✅ Modern, responsive UI with Tailwind CSS
-- ✅ Smooth animations with Framer Motion
 - ✅ shadcn-ui component library
 - ✅ Recipe listing with grid layout
 - ✅ Detailed recipe view
@@ -80,7 +79,7 @@ Frontend will run on `http://localhost:5173`
 ## 📁 Project Structure
 
 ```
-flavorful-pages-main/
+full-stack_recipie/
 ├── backend/
 │   ├── config/
 │   │   └── db.js
@@ -98,7 +97,6 @@ flavorful-pages-main/
 │
 ├── frontend/
 │   ├── src/
-│   │   ├── animations/
 │   │   ├── components/
 │   │   ├── lib/
 │   │   ├── pages/
@@ -112,6 +110,7 @@ flavorful-pages-main/
 │   └── README.md
 │
 ├── POSTMAN_COLLECTION.json
+├── netlify.toml
 └── README.md
 ```
 
@@ -130,7 +129,6 @@ flavorful-pages-main/
 - **Build Tool**: Vite
 - **Styling**: Tailwind CSS
 - **UI Components**: shadcn-ui
-- **Animations**: Framer Motion
 - **HTTP Client**: Axios
 - **Routing**: React Router DOM
 - **Icons**: Lucide React
@@ -196,12 +194,11 @@ Import the `POSTMAN_COLLECTION.json` file into Postman to test all API endpoints
 
 ## 🎨 Design Features
 
-- **Glassmorphism**: Modern glass-effect cards
-- **Smooth Animations**: Page transitions, hover effects, staggered lists
+- **Modern UI**: Clean and intuitive interface
 - **Responsive Design**: Mobile-first approach
-- **Dark Mode Ready**: CSS variables for easy theming
+- **Premium Components**: shadcn-ui component library
 - **Accessibility**: Keyboard navigation, ARIA labels
-- **Premium UI**: shadcn-ui components with custom styling
+- **Tailwind CSS**: Utility-first styling
 
 ## 🔒 Security Features
 

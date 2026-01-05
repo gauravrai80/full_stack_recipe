@@ -242,10 +242,3 @@ The API returns appropriate HTTP status codes:
 - Mongoose schema validation
 - Error messages don't expose sensitive information
 
-## 📚 Additional Resources
-
-- [Express.js Documentation](https://expressjs.com/)
-- [Mongoose Documentation](https://mongoosejs.com/)
-- [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
-- [Render Deployment Guide](https://render.com/docs)
-
