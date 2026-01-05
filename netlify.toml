@@ -8,8 +8,8 @@
   # Command to build your app
   command = "npm run build"
   
-  # Directory with the production build files
-  publish = "frontend/dist"
+  # Directory with the production build files (relative to base)
+  publish = "dist"
   
   # Environment variables
   environment = { VITE_API_BASE_URL = "https://your-backend-url.onrender.com/api" }
