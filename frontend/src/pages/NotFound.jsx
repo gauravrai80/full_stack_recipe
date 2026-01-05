@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import Header from '@/components/Header';
 import { Button } from '@/components/ui/button';
 import { Home, ChefHat } from 'lucide-react';
 
@@ -9,37 +10,40 @@ const NotFound = () => {
     const navigate = useNavigate();
 
     return (
-        <div
-            className="container flex items-center justify-center min-h-[calc(100vh-4rem)]"
-        >
-            <div
-                className="text-center space-y-6 max-w-md"
-            >
-                <div className="flex justify-center">
-                    <div className="rounded-full bg-primary/10 p-8">
-                        <ChefHat className="h-24 w-24 text-primary" />
+        <>
+            <Header />
+            <div className="container flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] py-12 animate-fade-in">
+                <div className="text-center space-y-6 max-w-md">
+                    {/* Icon */}
+                    <div className="inline-flex items-center justify-center w-24 h-24 bg-gradient-to-br from-orange-100 to-amber-100 rounded-full shadow-lg">
+                        <ChefHat className="h-12 w-12 text-orange-600" />
                     </div>
-                </div>
 
-                <div className="space-y-2">
-                    <h1 className="text-6xl font-bold text-primary">404</h1>
-                    <h2 className="text-3xl font-semibold">Page Not Found</h2>
-                    <p className="text-muted-foreground">
-                        Oops! The recipe you're looking for doesn't exist.
-                        It might have been removed or the URL might be incorrect.
-                    </p>
-                </div>
+                    {/* 404 Text */}
+                    <h1 className="text-8xl font-bold font-display bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent">
+                        404
+                    </h1>
 
-                <Button
-                    size="lg"
-                    onClick={() => navigate('/')}
-                    className="gap-2"
-                >
-                    <Home className="h-5 w-5" />
-                    Back to Home
-                </Button>
+                    {/* Message */}
+                    <div className="space-y-2">
+                        <h2 className="text-3xl font-bold text-gray-800">Page Not Found</h2>
+                        <p className="text-gray-600">
+                            Oops! The recipe you're looking for doesn't exist.
+                        </p>
+                    </div>
+
+                    {/* Button */}
+                    <Button
+                        onClick={() => navigate('/')}
+                        className="gap-2 bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 shadow-md hover:shadow-lg transition-all duration-300"
+                        size="lg"
+                    >
+                        <Home className="h-5 w-5" />
+                        Back to Home
+                    </Button>
+                </div>
             </div>
-        </div>
+        </>
     );
 };
 
