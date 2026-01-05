@@ -12,7 +12,7 @@
   publish = "dist"
   
   # Environment variables
-  environment = { VITE_API_BASE_URL = "https://your-backend-url.onrender.com/api" }
+  environment = { VITE_API_BASE_URL = "https://full-stack-recipe.onrender.com/api" }
 
 # Redirect all routes to index.html for client-side routing
 [[redirects]]
